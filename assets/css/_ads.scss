@@ -1,0 +1,53 @@
+.ads-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    #adsplayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .adsclick {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .skipads,
+    .registerads {
+        position: absolute;
+        right: 30px;
+        padding: 10px;
+        font-size: 18px;
+        text-decoration: underline;
+        color: #fff;
+        border-radius: 5px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    .skipads {
+        bottom: 100px;
+        background-color: #272626;
+        border: 2px solid #3b1314;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .registerads {
+        bottom: 30px;
+        background-color: red;
+        border: 2px solid red;
+    }
+
+    .registerads > a {
+        color: white;
+    }
+}

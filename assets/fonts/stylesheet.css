@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-Light.eot');
+    src: local('Mitr Light'), local('Mitr-Light'),
+        url('Mitr-Light.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-Light.woff2') format('woff2'),
+        url('Mitr-Light.woff') format('woff'),
+        url('Mitr-Light.ttf') format('truetype'),
+        url('Mitr-Light.svg#Mitr-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-Bold.eot');
+    src: local('Mitr Bold'), local('Mitr-Bold'),
+        url('Mitr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-Bold.woff2') format('woff2'),
+        url('Mitr-Bold.woff') format('woff'),
+        url('Mitr-Bold.ttf') format('truetype'),
+        url('Mitr-Bold.svg#Mitr-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-ExtraLight.eot');
+    src: local('Mitr ExtraLight'), local('Mitr-ExtraLight'),
+        url('Mitr-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-ExtraLight.woff2') format('woff2'),
+        url('Mitr-ExtraLight.woff') format('woff'),
+        url('Mitr-ExtraLight.ttf') format('truetype'),
+        url('Mitr-ExtraLight.svg#Mitr-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-Medium.eot');
+    src: local('Mitr Medium'), local('Mitr-Medium'),
+        url('Mitr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-Medium.woff2') format('woff2'),
+        url('Mitr-Medium.woff') format('woff'),
+        url('Mitr-Medium.ttf') format('truetype'),
+        url('Mitr-Medium.svg#Mitr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-SemiBold.eot');
+    src: local('Mitr SemiBold'), local('Mitr-SemiBold'),
+        url('Mitr-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-SemiBold.woff2') format('woff2'),
+        url('Mitr-SemiBold.woff') format('woff'),
+        url('Mitr-SemiBold.ttf') format('truetype'),
+        url('Mitr-SemiBold.svg#Mitr-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('Mitr-Regular.eot');
+    src: local('Mitr Regular'), local('Mitr-Regular'),
+        url('Mitr-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mitr-Regular.woff2') format('woff2'),
+        url('Mitr-Regular.woff') format('woff'),
+        url('Mitr-Regular.ttf') format('truetype'),
+        url('Mitr-Regular.svg#Mitr-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,44 @@
+.banner-container {
+    display: flex;
+    padding: 10px 15px;
+    .side-banner-container {
+        width: 15%;
+        flex-shrink: 0;
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+            width: 20%;
+        }
+        .close-ads {
+            position: absolute;
+            bottom: 100%;
+            cursor: pointer;
+        }
+        &.left {
+            left: 0;
+            .close-ads {
+                left: 100%;
+            }
+        }
+        &.right {
+            right: 0;
+            .close-ads {
+                right: 100%;
+            }
+        }
+    }
+    .mid-banner-container {
+        flex-grow: 1;
+        margin: 0 4px;
+    }
+    .ads-row {
+        display: block;
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 4px;
+        }
+    }
+}
