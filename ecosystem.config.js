@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "ruaymovie",
+            name: "devmovie",
             exec_mode: "cluster",
             instances: "1", // Or a number of instances
             script: "./node_modules/nuxt/bin/nuxt.js",

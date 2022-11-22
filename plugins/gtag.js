@@ -5,7 +5,7 @@ import axios from "axios";
 export default async ({ app, $config: { baseApiUrl } }) => {
     const response = await axios.get((baseApiUrl || "https://dev-movie-api.pirate168.com/api/v1/") + "settingweb", {
         headers: {
-            domain: "ruaymovie",
+            domain: "devmovie",
         },
     });
     Vue.use(

@@ -7,7 +7,7 @@ export default {
         host: '0.0.0.0'
     },
     head: {
-        title: "ruaymovie",
+        title: "devmovie",
         htmlAttrs: {
             lang: "th",
             translate: "no",
@@ -55,13 +55,13 @@ export default {
         baseURL: process.env.BASE_API_URL || "https://dev-movie-api.pirate168.com/api/v1/",
         headers: {
             common: {
-                domain: "ruaymovie",
+                domain: "devmovie",
             },
         },
     },
 
     sitemap: {
-        hostname: "https://www.ruaymovie.com",
+        hostname: "https://www.devmovie.com",
         gzip: true,
         cacheTime: 1000 * 60 * 60 * 24,
         routes: async () => {
@@ -70,7 +70,7 @@ export default {
                 {},
                 {
                     headers: {
-                        domain: "ruaymovie",
+                        domain: "devmovie",
                     },
                 }
             );
@@ -86,7 +86,7 @@ export default {
     robots: {
         UserAgent: "*",
         Allow: "/",
-        Sitemap: "https://www.ruaymovie.com/sitemap.xml"
+        Sitemap: "https://www.devmovie.com/sitemap.xml"
     },
 
     bootstrapVue: {

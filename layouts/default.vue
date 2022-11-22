@@ -73,12 +73,12 @@ export default {
                 {
                     property: "og:url",
                     name: "og:url",
-                    content: "https://www.ruaymovie.com",
+                    content: "https://www.devmovie.com",
                 },
                 {
                     property: "og:site_name",
                     name: "og:site_name",
-                    content: "ruaymovie",
+                    content: "devmovie",
                 },
                 {
                     property: "og:image",
