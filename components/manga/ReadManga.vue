@@ -138,7 +138,7 @@
                 <div class="popup-content">
                     <div class="text-right"><b-icon-x-circle-fill class="popup-close-btn" @click="showRequestPopup = false" /></div>
                     <div class="tab-btn-list">
-                        <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">แจ้งมังงะเสีย</div>
+                        <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">แจ้งหนังเสีย</div>
                     </div>
                     <div class="tab-content-list">
                         <transition-group name="fade" mode="out-in">

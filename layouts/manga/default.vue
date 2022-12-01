@@ -4,7 +4,7 @@
             <!-- <Banner /> -->
             <div class="text-center">
                 <b-navbar-brand to="/"><nuxt-img format="webp" :src="logo" width="286" height="150" :alt="SEOTitle" /></b-navbar-brand>
-                <!-- <h2 class="web-title">มังงะใหม่ล่าสุด</h2> -->
+                <!-- <h2 class="web-title">หนังใหม่ล่าสุด</h2> -->
                 <!-- <h3 class="web-slogan">{{ slogan }}</h3> -->
             </div>
             <!-- <Poster /> -->
@@ -65,7 +65,7 @@ export default {
                 },
                 {
                     name: "keywords",
-                    content: ["อ่านมังงะ"],
+                    content: ["อ่านหนัง"],
                 },
                 {
                     property: "og:title",

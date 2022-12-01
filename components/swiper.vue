@@ -36,7 +36,7 @@ export default {
             const self = this;
             this.loadingList = true;
             this.$axios
-                .$post("moviehot", {
+                .$get("movie/poster", {
                 })
                 .then(function (response) {
                     if (response.code == 200) {

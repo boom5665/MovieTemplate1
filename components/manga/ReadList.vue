@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="movie-not-found" v-else>
-            <span v-show="!loadingList">ไม่พบมังงะที่คุณค้นหา</span>
+            <span v-show="!loadingList">ไม่พบหนังที่คุณค้นหา</span>
             <div class="loader-container" v-show="loadingList">
                 <nuxt-img format="webp" src="/loader.png" alt="loader" />
             </div>

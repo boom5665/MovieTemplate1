@@ -7,7 +7,7 @@
                     <b-nav-item to="/" class="menu-btn">หน้าหลัก</b-nav-item>
                     <!-- <b-nav-item to="/manga/category/action" class="menu-btn">ต่อสู้</b-nav-item> -->
                     <b-nav-item class="menu-btn"><CategoryList :_isAV="true" /></b-nav-item>
-                    <b-nav-item @click="showRequestPopup = true" class="menu-btn">ขอมังงะ | ติดต่อโฆษณา</b-nav-item>
+                    <b-nav-item @click="showRequestPopup = true" class="menu-btn">ขอหนัง | ติดต่อโฆษณา</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <div class="search-container input-container">
@@ -23,7 +23,7 @@
             <div class="popup-content">
                 <div class="text-right"><b-icon-x-circle-fill class="popup-close-btn" @click="showRequestPopup = false" /></div>
                 <div class="tab-btn-list">
-                    <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">ขอมังงะ</div>
+                    <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">ขอหนัง</div>
                     <div class="tab-btn" @click="activeTab = 1" :class="{ active: activeTab == 1 }">ติดต่อโฆษณา</div>
                 </div>
                 <div class="tab-content-list">
@@ -236,7 +236,7 @@ export default {
                     self.showLoader = false;
                 }, 1000);
             } else {
-                alert("กรุณาพิมชื่อมังงะ");
+                alert("กรุณาพิมชื่อหนัง");
             }
         },
     },

@@ -26,7 +26,7 @@
             <div class="popup-content">
                 <div class="text-right"><b-icon-x-circle-fill class="popup-close-btn" @click="showRequestPopup = false" /></div>
                 <div class="tab-btn-list">
-                    <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">ขอมังงะ</div>
+                    <div class="tab-btn" @click="activeTab = 0" :class="{ active: activeTab == 0 }">ขอหนัง</div>
                     <div class="tab-btn" @click="activeTab = 1" :class="{ active: activeTab == 1 }">ติดต่อโฆษณา</div>
                 </div>
                 <div class="tab-content-list">
@@ -170,7 +170,8 @@ export default {
             } else {
                 if (requestDetail) {
                     if (requestDetail) {
-                        this.requestMovie();
+                        // this.requestMovie();
+                             alert("กรุณาซื้อแพ็กเกจ");
                     } else {
                         alert("email ไม่ถูกต้อง");
                         this.requestDetail = "";
@@ -191,7 +192,8 @@ export default {
             ) {
                 alert("กรุณากรอกข้อมูลให้ครบ");
             } else {
-                this.contactAds();
+                   alert("กรุณาซื้อแพ็กเกจ");
+                // this.contactAds();
                 // alert(" สำเร็จ");
             }
         },

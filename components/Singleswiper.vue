@@ -1,7 +1,7 @@
 <template>
     <nuxt-link :to="getPlayUrl(_obj)" class="single-movie-block">
         <div class="poster-container">
-            <nuxt-img class="poster" :loading="_fetchMode" :src="_obj.picture" height="1000" :alt="_obj.full_name" />
+            <nuxt-img class="poster" :loading="_fetchMode" :src="_obj.imageslide" height="1000" :alt="_obj.full_name" />
 
             <div class="poster-overlay">
               <div class="rating" v-show="_obj.ratescore">{{ _obj.ratescore }}</div>

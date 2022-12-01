@@ -15,11 +15,11 @@
                     </b-col>
                     <b-col cols="12" lg="6" xl="6" class="dis-play">
                         <div class="preview-container-po">
-                            <div class="preview-poster-po" style="text-align: center;">
-                                <nuxt-img style="width: 70%;" loading="lazy" format="webp" :src="_movieObj.picture" :alt="_movieObj.full_name" />
+                            <div class="preview-poster-po" style="text-align: center">
+                                <nuxt-img style="width: 70%" loading="lazy" format="webp" :src="_movieObj.picture" :alt="_movieObj.full_name" />
                             </div>
                         </div>
-                        <div class="btn-play-mo " @click="showMovie()"><nuxt-img src="/Polygon.png" /> เล่น</div>
+                        <div class="btn-play-mo" @click="showMovie()"><nuxt-img src="/Polygon.png" /> เล่น</div>
                     </b-col>
                 </b-row>
             </b-container>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="tab-content-list">
                     <div class="tab-content">
-                        <textarea id="request-detail" style="height: 150px;" class="popup-input" v-model="reportDetail" @keyup="isLetter"></textarea>
+                        <textarea id="request-detail" style="height: 150px" class="popup-input" v-model="reportDetail" @keyup="isLetter"></textarea>
                         <div class="text-center">
                             <div class="submit-btn" @click="reportMovie()">ส่ง</div>
                         </div>
@@ -187,61 +187,13 @@ export default {
                 self.setPlayerUrl();
             }, 100);
         },
-         showRequestPopup(val) {
-            if (val == false) {
-                this.requestDetail = "";
-                this.contactName = "";
-                this.contactEmail = "";
-                this.contactLine = "";
-                this.contactPhone = "";
-                this.contactDetail = "";
-            }
-        },
-        requestDetail(val) {
-            var tn = /w+[\{\}:-=_|?&;$%@"<>()#^!\*+,]/;
-            var tw = /^\s+|\s+$/gm;
-            if (tn.test(val) == true || tw.test(val) == true) {
-                this.requestDetail = "";
-            }
-        },
-        contactName(val) {
-            var tn = /w+[\{\}:-=_|?&;$%@"<>()#^!\*+,]/;
-            if (tn.test(val) == true) {
-                this.contactName = "";
-            }
-        },
-        contactLine(val) {
-            var tn = /^\w+[\{\}:-=|?&;$%"<>()#^!\*+,]/;
-            if (tn.test(val) == true) {
-                this.contactLine = "";
-            }
-        },
-        contactDetail(val) {
-            var tn = /[\{\}:-=_|?&;$%@"<>()#^!\*+,]/;
-            if (tn.test(val) == true) {
-                this.contactDetail = "";
-            }
-        },
-        contactPhone(val) {
-            var tn = /[\{\}:-=_|?&;$%@"<>()#^!\*+,]/;
-            var nm = /^[1-9]\d*$/;
-            if (tn.test(val) == true || nm.test(val) == true) {
-                // console.log(nm.test(val));
-                this.contactPhone = "";
-            }
-        },
-        searchInput(val) {
-            var tn = /[\{\}:-=_|?&;$%@"<>()#^!\*+,]/;
-            if (tn.test(val) == true) {
-                this.searchInput = "";
-            }
-        },
     },
     methods: {
         showMovie() {
-            if (this.showmovie) {
-                this.showmovie = false;
-            }
+               alert("กรุณาซื้อแพ็กเกจ");
+            // if (this.showmovie) {
+            //     this.showmovie = false;
+            // }
         },
         setPlayerUrl() {
             if (this._type == "series") {
@@ -284,24 +236,25 @@ export default {
                 alert("กรุณากรอกข้อมูลให้ครบ");
                 return;
             }
-            const self = this;
-            this.showLoader = true;
-            let type_id = 0;
-            if (this._isAV) type_id = 1;
-            this.$axios
-                .$post("moviebroken", {
-                    movie_id: self._id,
-                    movie_type: type_id,
-                    reason: detail,
-                })
-                .then(function (response) {
-                    self.showReportPopup = false;
-                    self.showLoader = false;
-                    self.reportDetail = "";
-                    if (response.code == 200) {
-                        alert("สำเร็จ");
-                    }
-                });
+            alert("กรุณาซื้อแพ็กเกจ");
+            // const self = this;
+            // this.showLoader = true;
+            // let type_id = 0;
+            // if (this._isAV) type_id = 1;
+            // this.$axios
+            //     .$post("moviebroken", {
+            //         movie_id: self._id,
+            //         movie_type: type_id,
+            //         reason: detail,
+            //     })
+            //     .then(function (response) {
+            //         self.showReportPopup = false;
+            //         self.showLoader = false;
+            //         self.reportDetail = "";
+            //         if (response.code == 200) {
+            //             alert("สำเร็จ");
+            //         }
+            //     });
         },
         getHotMovies() {
             const self = this;
