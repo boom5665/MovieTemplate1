@@ -190,7 +190,7 @@ export default {
     },
     methods: {
         showMovie() {
-               alert("กรุณาซื้อแพ็กเกจ");
+           this.$swal("", "กรุณาซื้อแพ็กเกจ", "warning");
             // if (this.showmovie) {
             //     this.showmovie = false;
             // }
@@ -233,10 +233,10 @@ export default {
         reportMovie() {
             const detail = this.reportDetail;
             if (detail.trim() == "") {
-                alert("กรุณากรอกข้อมูลให้ครบ");
+                this.$swal("", "กรุณากรอกข้อมูลให้ครบ", "error");
                 return;
             }
-            alert("กรุณาซื้อแพ็กเกจ");
+           this.$swal("", "กรุณาซื้อแพ็กเกจ", "warning");
             // const self = this;
             // this.showLoader = true;
             // let type_id = 0;
@@ -252,7 +252,7 @@ export default {
             //         self.showLoader = false;
             //         self.reportDetail = "";
             //         if (response.code == 200) {
-            //             alert("สำเร็จ");
+            //                self.$swal("", "สำเร็จ", "success");
             //         }
             //     });
         },

@@ -5,7 +5,7 @@
                 <b-nav-item class="menu-btn"><CategoryList :_isAV="true" /></b-nav-item>
             </b-navbar-nav>
 
-            <b-navbar-brand to="/"><nuxt-img format="webp" :src="logo" height="40" width="155" :alt="SEOTitle" /></b-navbar-brand>
+            <b-navbar-brand to="/"><nuxt-img format="webp" :src="logo"  height="50" width="250" :alt="SEOTitle" /></b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" v-model="isCollapseOpen" is-nav>
                 <b-navbar-nav class="menu-list">
@@ -166,14 +166,14 @@ export default {
     methods: {
         saverequestMovie(requestDetail) {
             if (this.requestDetail == "") {
-                alert("กรุณากรอกข้อมูลให้ครบ");
+                this.$swal("", "กรุณากรอกข้อมูลให้ครบ", "error");
             } else {
                 if (requestDetail) {
                     if (requestDetail) {
                         // this.requestMovie();
-                             alert("กรุณาซื้อแพ็กเกจ");
+                        this.$swal("", "กรุณาซื้อแพ็กเกจ", "warning");
                     } else {
-                        alert("email ไม่ถูกต้อง");
+                        this.$swal("", "Email ไม่ถูกต้อง", "error");
                         this.requestDetail = "";
                     }
                 }
@@ -190,17 +190,16 @@ export default {
                 this.contactPhone == "" ||
                 this.contactDetail.trim() == ""
             ) {
-                alert("กรุณากรอกข้อมูลให้ครบ");
+                this.$swal("", "กรุณากรอกข้อมูลให้ครบ", "error");
             } else {
-                   alert("กรุณาซื้อแพ็กเกจ");
                 // this.contactAds();
-                // alert(" สำเร็จ");
+                this.$swal("", "กรุณาซื้อแพ็กเกจ", "warning");
             }
         },
         requestMovie() {
             const detail = this.requestDetail;
             if (detail.trim() == "") {
-                alert("กรุณากรอกข้อมูลให้ครบ");
+                this.$swal("", "กรุณากรอกข้อมูลให้ครบ", "error");
                 return;
             }
             const self = this;
@@ -214,7 +213,7 @@ export default {
                     self.showLoader = false;
                     self.requestDetail = "";
                     if (response.code == 200) {
-                        alert("สำเร็จ");
+                        self.$swal("", "สำเร็จ", "success");
                     }
                 });
         },
@@ -225,11 +224,11 @@ export default {
             const lineid = this.contactLine;
             const detail = this.contactDetail;
             if (name.trim() == "" || tel.trim() == "" || lineid.trim() == "" || detail.trim() == "") {
-                alert("กรุณากรอกข้อมูลให้ครบ");
+                this.$swal("", "กรุณากรอกข้อมูลให้ครบ", "error");
                 return;
             }
             if (!this.validateEmail(email)) {
-                alert("อีเมล์ไม่ถูกต้อง");
+                this.$swal("", "อีเมล์ไม่ถูกต้อง", "error");
                 return;
             }
             const self = this;
@@ -251,12 +250,12 @@ export default {
                     self.contactLine = "";
                     self.contactDetail = "";
                     if (response.code == 200) {
-                        alert("สำเร็จ");
+                        self.$swal("", "สำเร็จ", "success");
                     }
                 });
         },
         search() {
-            if (this.searchInput != "") {
+            if (this.searchInput.trim() != "") {
                 const self = this;
                 this.showLoader = true;
                 let path = "/search";

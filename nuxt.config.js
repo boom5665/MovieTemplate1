@@ -48,6 +48,7 @@ export default {
         "@nuxt/image",
         "bootstrap-vue/nuxt",
         "@nuxtjs/robots",
+        "vue-sweetalert2/nuxt",
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
