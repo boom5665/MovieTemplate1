@@ -63,12 +63,7 @@ export default {
     position: absolute;
     right: 0px;
     top: 40%;
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width: 576px) {
-        font-size: 30px;
-    }
+
 }
 .arrow-left {
     background: transparent;
@@ -78,11 +73,6 @@ export default {
     position: absolute;
     left: 0px;
     top: 40%;
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width: 576px) {
-        font-size: 30px;
-    }
+
 }
 </style>
