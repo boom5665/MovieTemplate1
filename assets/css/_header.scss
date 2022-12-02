@@ -38,6 +38,7 @@
       background: #4A4A4A;
       border-radius: 0px 8px 8px 0px;
       cursor: pointer;
+
       &:hover {
         color: $red-color-darker;
       }
@@ -96,6 +97,29 @@
 
 }
 
+.dropdown-menu.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+
+  @media screen and (max-width: 1024px) {
+    position: absolute !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    left: -15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    left: -15px;
+  }
+
+  @media screen and (max-width: 576px) {
+    position: absolute !important;
+    grid-template-columns: 1fr 1fr;
+    left: -15px;
+  }
+}
 
 .dropdown-menu {
   position: absolute;

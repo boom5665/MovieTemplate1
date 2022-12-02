@@ -65,7 +65,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped>
 .arrow-right {
     border: none;
     width: 83px;
@@ -76,5 +76,11 @@ export default {
     top: -3%;
     background: linear-gradient(270deg, #000000 -23.92%, rgba(0, 0, 0, 0) 152.38%);
     border-radius: 1px 0px 0px 0px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
 }
 </style>
