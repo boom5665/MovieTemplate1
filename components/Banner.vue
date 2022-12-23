@@ -4,23 +4,23 @@
             <a class="ads-row" :href="value.url" target="_blank" v-for="(value, index) in adsLeft" :key="index" @click="updateAdsImageClick(value)">
                 <nuxt-img :src="value.picture" :alt="value.name" />
             </a>
-            <nuxt-img format="webp" src="/left.png" alt="loader" />
+            <!-- <nuxt-img format="webp" src="/left.png" alt="loader" /> -->
             <div class="close-ads" @click="showAds = false" v-show="adsLeft.length > 0"><b-icon-x-lg /></div>
         </div>
         <div class="mid-banner-container">
             <a class="ads-row" :href="value.url" target="_blank" v-for="(value, index) in adsCenter" :key="index" @click="updateAdsImageClick(value)">
                 <nuxt-img :src="value.picture" :alt="value.name" />
             </a>
+            <!-- <nuxt-img format="webp" src="/center.png" alt="loader" />
             <nuxt-img format="webp" src="/center.png" alt="loader" />
             <nuxt-img format="webp" src="/center.png" alt="loader" />
-            <nuxt-img format="webp" src="/center.png" alt="loader" />
-            <nuxt-img format="webp" src="/center.png" alt="loader" />
+            <nuxt-img format="webp" src="/center.png" alt="loader" /> -->
         </div>
         <div class="side-banner-container right" v-show="showAds">
             <a class="ads-row" :href="value.url" target="_blank" v-for="(value, index) in adsRight" :key="index" @click="updateAdsImageClick(value)">
                 <nuxt-img :src="value.picture" :alt="value.name" />
             </a>
-            <nuxt-img format="webp" src="/left.png" alt="loader" />
+            <!-- <nuxt-img format="webp" src="/left.png" alt="loader" /> -->
             <div class="close-ads" @click="showAds = false" v-show="adsRight.length > 0"><b-icon-x-lg /></div>
         </div>
     </div>
