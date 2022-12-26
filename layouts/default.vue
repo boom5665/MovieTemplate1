@@ -2,7 +2,6 @@
     <div>
         <b-container>
             <Header />
-            <!-- <Banner /> -->
             <!-- <div class="text-center">
                 <h2 class="web-title">MOVIE</h2>
                 <h3 class="web-slogan">{{ slogan }}</h3>
@@ -23,6 +22,7 @@
                     <Nuxt />
                 </b-col>
             </b-row>
+            <Banner />
             <Footer />
             <div class="footer-text">
                 <div class="footer-title">{{ slogan }}</div>
@@ -35,12 +35,11 @@
                 <a class="ads-image" :href="value.url" target="_blank" v-for="(value, index) in adsBottom" :key="index" @click="updateAdsImageClick(value)">
                     <nuxt-img :src="value.picture" :alt="value.name" />
                 </a>
-                <!-- <nuxt-img format="webp" src="/center.png" alt="loader" />
-                <nuxt-img format="webp" src="/center.png" alt="loader" /> -->
+                <nuxt-img format="webp" src="/center.png" alt="loader" />
+                <nuxt-img format="webp" src="/center.png" alt="loader" />
                 <div class="close-ads" @click="showAds = false">X</div>
             </div>
         </div>
-
     </div>
 </template>
 
